@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Weekly Planner</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        height: 120vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #1b5e20);
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        width: 100%;
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      /* Back Button */
+      .back-btn {
+        padding: 10px 25px;
+        border: none;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        background: linear-gradient(90deg, #00c853, #69f0ae);
+        color: #0f172a;
+        transition: 0.3s;
+      }
+
+      .back-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 200, 83, 0.5);
+      }
+
+      /* Logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-top: 5vh;
+        margin-right: -10vw;
+      }
+
+      .logo-text {
+        font-size: 24px;
+        font-weight: 600;
+        margin-left: 20px;
+      }
+
+      /* Cards Wrapper */
+      .wrapper {
+        width: 100%;
+        margin-top: 30vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Cards Grid */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 220px);
+        gap: 30px;
+        justify-content: center;
+      }
+
+      /* Card */
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(20px);
+        padding: 40px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .card h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1000px) {
+        .cards {
+          grid-template-columns: repeat(2, 220px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <button class="back-btn" onclick="goBack()">Back</button>
+
+      <div class="logo">
+        <svg width="45" height="45" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#00c853" />
+              <stop offset="100%" stop-color="#69f0ae" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="10"
+            y="10"
+            width="80"
+            height="80"
+            rx="20"
+            fill="url(#logoGradient)"
+          />
+          <path
+            d="M30 50 L45 65 L70 35"
+            stroke="#0f172a"
+            stroke-width="8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div class="logo-text">TaskFlow</div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="cards">
+        <a href="sunday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Sunday</h3></div>
+        </a>
+        <a href="monday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Monday</h3></div>
+        </a>
+        <a href="tuesday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Tuesday</h3></div>
+        </a>
+        <a href="wednesday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Wednesday</h3></div>
+        </a>
+        <a href="thursday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Thursday</h3></div>
+        </a>
+        <a href="friday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Friday</h3></div>
+        </a>
+        <a href="saturday.html" style="text-decoration: none;color: white;">
+          <div class="card"><h3>Saturday</h3></div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

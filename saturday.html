@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Tasks</title>
+    <link rel="stylesheet" href="days.css" />
+  </head>
+
+  <body>
+    <h1 class="day-title">Saturday</h1>
+
+    <!-- form -->
+
+    <div class="card-1">
+      <h2>Add Your Task</h2>
+
+      <form class="addTaskFrom">
+        <div class="input-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" required />
+        </div>
+
+        <div class="input-group">
+          <label for="task">Task</label>
+          <input
+            type="text"
+            id="task"
+            placeholder="Enter your task..."
+            required
+          />
+        </div>
+
+        <button type="submit" class="add-btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="card-2">
+      <!-- Top Header Row -->
+      <div class="header">
+        <div class="logo">
+          <div class="logo-icon">T</div>
+          <div class="logo-text">TaskFlow</div>
+        </div>
+
+        <button class="show-form-btn">Add Task</button>
+      </div>
+
+      <h1 class="task-heading">There is no task yet</h1>
+
+      <table>
+        <thead class="table-heading">
+          <tr>
+            <th></th>
+            <th>Time</th>
+            <th>Task</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <tbody class="table-body"></tbody>
+      </table>
+    </div>
+
+    <script src="saturday.js"></script>
+  </body>
+</html>
