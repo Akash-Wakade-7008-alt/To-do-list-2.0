@@ -1,201 +1,230 @@
- * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Segoe UI", sans-serif;
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-      body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(135deg, #0f2027, #203a43, #1b5e20);
-        color: white;
-      }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #1b5e20);
+  color: white;
+  padding: 20px;
+}
 
-      .card-1 {
-        width: 600px;
-        display: none;
-        max-width: 95%;
-        background: rgba(255, 255, 255, 0.07);
-        backdrop-filter: blur(20px);
-        padding: 50px 60px;
-        border-radius: 25px;
-        box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
+.day-title {
+  text-align: center;
+  font-size: clamp(32px, 6vw, 70px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #00c853, #69f0ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
 
-      .card-2 {
-        width: 900px;
-        max-width: 95%;
-        background: rgba(255, 255, 255, 0.07);
-        backdrop-filter: blur(20px);
-        padding: 50px 60px;
-        border-radius: 25px;
-        box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
+.card-1,
+.card-2 {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 5vh;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 30px;
+}
 
-      .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 35px;
-      }
+.card-1 {
+  display: none;
+  max-width: 600px;
+}
 
-      .logo-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 12px;
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        color: #0f172a;
-        margin-right: 10px;
-        box-shadow: 0 10px 20px rgba(0, 200, 83, 0.4);
-      }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-      .logo-text {
-        font-size: 22px;
-        font-weight: 600;
-      }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: center;
-      }
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00c853, #69f0ae);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0f172a;
+  margin-right: 10px;
+  box-shadow: 0 10px 20px rgba(0, 200, 83, 0.4);
+}
 
-      thead th {
-        padding: 15px;
-        font-weight: 600;
-        font-size: 15px;
-        color: #e5e7eb;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
+.logo-text {
+  font-size: 22px;
+  font-weight: 600;
+}
 
-      tbody td {
-        padding: 18px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        font-size: 14px;
-        color: #d1d5db;
-      }
+.show-form-btn,
+.add-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(90deg, #00c853, #69f0ae);
+  color: #0f172a;
+  transition: 0.3s;
+}
 
-      tbody tr:hover {
-        background: rgba(255, 255, 255, 0.05);
-      }
+.show-form-btn:hover,
+.add-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
+}
 
-      .action-btn {
-        padding: 6px 15px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 500;
-      }
+.input-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
 
-      .edit {
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        color: #0f172a;
-      }
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.8;
+}
 
-      .delete {
-        background: rgba(255, 255, 255, 0.15);
-        color: white;
-      }
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-      }
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 
-      .show-form-btn {
-        padding: 8px 20px;
-        border: none;
-        height: 7vh;
-        width: 12vw;
-        border-radius: 25px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: -4vh;
-        font-size: 20px;
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        color: #0f172a;
-        transition: 0.3s;
-      }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  overflow-x: auto;
+}
 
-      .show-form-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
-      }
+thead th {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-      .add-btn {
-        padding: 8px 20px;
-        border: none;
-        height: 7vh;
-        width: 10vw;
-        margin-left: 14vw;
-        border-radius: 25px;
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 20px;
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        color: #000000;
-        transition: 0.3s;
-      }
+tbody td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 14px;
+  color: #d1d5db;
+}
 
-      .add-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
-      }
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
 
-      .input-group {
-        margin-bottom: 25px;
-        text-align: left;
-      }
+.action-btn {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
 
-      label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 14px;
-        opacity: 0.8;
-      }
+.edit {
+  background: linear-gradient(90deg, #00c853, #69f0ae);
+  color: #0f172a;
+}
 
-      input {
-        width: 100%;
-        padding: 12px;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
+.delete {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
 
-      input::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-      }
+.task-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
 
-      .task-heading {
-        margin-left: 17vw;
-        margin-top: 5vh;
-      }
+@media (max-width: 768px) {
+  .card-1,
+  .card-2 {
+    padding: 25px;
+  }
 
-      .day-title {
-        text-align: center;
-        font-size: 70px;
-        font-weight: 700;
-        margin-top: -10vh;
-        margin-bottom: 10vh;
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        letter-spacing: 2px;
-      }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .show-form-btn {
+    width: 100%;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  td {
+    text-align: center;
+    padding: 8px 0;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    text-align: left;
+  }
+}

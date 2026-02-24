@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskFlow - Weekly Planner</title>
- <link
-      rel="shortcut icon"
-      href="taskFlow.ico"
-      type="image/x-icon"
-    />
+
+    <link rel="shortcut icon" href="taskFlow.ico" type="image/x-icon" />
+
     <style>
       * {
         margin: 0;
@@ -18,29 +16,27 @@
       }
 
       body {
-        height: 120vh;
+        min-height: 120vh;
         background: linear-gradient(135deg, #0f2027, #203a43, #1b5e20);
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         color: white;
+        padding: 20px;
       }
 
-      /* Top Bar */
-      .top-bar {
+      header {
         width: 100%;
-        max-width: 1100px;
+        max-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
 
-      /* Back Button */
       .back-btn {
         padding: 10px 25px;
         border: none;
-        margin-left: 2vw;
-        margin-top: 5vh;
         border-radius: 30px;
         font-weight: bold;
         cursor: pointer;
@@ -54,37 +50,42 @@
         box-shadow: 0 10px 25px rgba(0, 200, 83, 0.5);
       }
 
-      /* Logo */
       .logo {
         display: flex;
         align-items: center;
-        margin-top: 5vh;
-        margin-right: -20vw;
+        gap: 8px;
       }
 
       .logo-text {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 600;
-        margin-left: 5px;
       }
 
-      /* Cards Wrapper */
+      .day-title {
+        text-align: center;
+        font-size: clamp(32px, 6vw, 60px);
+        font-weight: 700;
+        background: linear-gradient(90deg, #00c853, #69f0ae);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 50px;
+      }
+
       .wrapper {
         width: 100%;
-        margin-top: 20vh;
+        max-width: 1200px;
         display: flex;
+        margin-top: 10vh;
         justify-content: center;
       }
 
-      /* Cards Grid */
       .cards {
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 220px);
-        gap: 30px;
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
       }
 
-      /* Card */
       .card {
         background: rgba(255, 255, 255, 0.06);
         backdrop-filter: blur(20px);
@@ -103,36 +104,33 @@
 
       .card h3 {
         font-size: 20px;
-        letter-spacing: 1px;
-      }
-
-      .day-title {
-        text-align: center;
-        font-size: 70px;
-        font-weight: 700;
-        background: linear-gradient(90deg, #00c853, #69f0ae);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         letter-spacing: 2px;
       }
 
-      /* Responsive */
-      @media (max-width: 1000px) {
-        .cards {
-          grid-template-columns: repeat(2, 220px);
-        }
+      a {
+        text-decoration: none;
+        color: white;
       }
 
       @media (max-width: 600px) {
-        .cards {
-          grid-template-columns: 1fr;
+        header {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .back-btn {
+          width: 100%;
+          max-width: 200px;
+        }
+        .wrapper {
+          margin-top: 2vh;
         }
       }
     </style>
   </head>
 
   <body>
-    <div class="top-bar">
+    <header>
       <button class="back-btn" onclick="goBack()">Back</button>
 
       <div class="logo">
@@ -161,44 +159,39 @@
         </svg>
         <div class="logo-text">TaskFlow</div>
       </div>
-    </div>
+    </header>
 
-
-
-    <h1 class="day-title">Choose the day</h1>
-
-
-
+    <h1 class="day-title">Choose the Day</h1>
 
     <div class="wrapper">
       <div class="cards">
-        <a href="../pages/sunday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Sunday</h3></div>
-        </a>
-        <a href="../pages/monday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Monday</h3></div>
-        </a>
-        <a href="../pages/tuesday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Tuesday</h3></div>
-        </a>
-        <a href="../pages/wednesday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Wednesday</h3></div>
-        </a>
-        <a href="../pages/thursday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Thursday</h3></div>
-        </a>
-        <a href="../pages/friday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Friday</h3></div>
-        </a>
-        <a href="../pages/saturday.html" style="text-decoration: none;color: white;">
-          <div class="card"><h3>Saturday</h3></div>
-        </a>
+        <a href="../pages/sunday.html"
+          ><div class="card"><h3>Sunday</h3></div></a
+        >
+        <a href="../pages/monday.html"
+          ><div class="card"><h3>Monday</h3></div></a
+        >
+        <a href="../pages/tuesday.html"
+          ><div class="card"><h3>Tuesday</h3></div></a
+        >
+        <a href="../pages/wednesday.html"
+          ><div class="card"><h3>Wednesday</h3></div></a
+        >
+        <a href="../pages/thursday.html"
+          ><div class="card"><h3>Thursday</h3></div></a
+        >
+        <a href="../pages/friday.html"
+          ><div class="card"><h3>Friday</h3></div></a
+        >
+        <a href="../pages/saturday.html"
+          ><div class="card"><h3>Saturday</h3></div></a
+        >
       </div>
     </div>
 
     <script>
       function goBack() {
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
       }
     </script>
   </body>
