@@ -99,7 +99,8 @@ No backend required — fully frontend-based.
 
 # 📂 Project Structure
 
-`
+```
+
 To-Do-List-App-2.0/
 │
 ├── assets/
@@ -133,7 +134,7 @@ To-Do-List-App-2.0/
 │
 ├── index.html
 └── README.md
-`
+```
 
 ---
 
