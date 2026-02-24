@@ -1,15 +1,11 @@
-# 🚀 TaskFlow – Smart Daily To-Do Manager
-
 <p align="center">
-  <img src="assets/taskFlow.ico" width="90" />
+  <img src="assets/banner.png" alt="TaskFlow Banner"/>
 </p>
 
 <p align="center">
   <b>Plan Your Day with Precision</b><br>
   A modern and minimal day-wise task management web application built using pure HTML, CSS & JavaScript.
 </p>
-
----
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" />
@@ -20,6 +16,8 @@
 </p>
 
 ---
+
+# 🚀 TaskFlow – Smart Daily To-Do Manager
 
 ## 🌐 Live Demo
 
@@ -33,25 +31,18 @@
   <img src="assets/preview.gif" width="850"/>
 </p>
 
-> 💡 This GIF demonstrates the complete workflow:
-> - Selecting a day  
-> - Adding a task  
-> - Editing  
-> - Deleting  
-> - Persistent storage  
-
 ---
 
 # ✨ Features
 
-- ✅ Day-wise task management (Sunday – Saturday)  
-- ✅ Add tasks with specific time  
-- ✅ Edit tasks dynamically  
-- ✅ Delete tasks instantly  
-- ✅ Persistent data using LocalStorage  
-- ✅ Clean glassmorphism UI  
-- ✅ Responsive layout  
-- ✅ Dynamic DOM manipulation  
+- ✅ Day-wise task management (Sunday – Saturday)
+- ✅ Add tasks with specific time
+- ✅ Edit tasks dynamically
+- ✅ Delete tasks instantly
+- ✅ Persistent data using LocalStorage
+- ✅ Modern glassmorphism UI
+- ✅ Responsive layout
+- ✅ Dynamic DOM manipulation
 
 ---
 
@@ -77,12 +68,12 @@ tasks_wednesday
 ...
 ```
 
-When a page loads:
+When the page loads:
 
-- Tasks are fetched from LocalStorage  
-- Table rows are generated dynamically  
-- UI updates instantly  
-- No backend required — fully frontend-based  
+- Tasks are fetched from LocalStorage
+- Table rows are generated dynamically
+- UI updates instantly
+- No backend required — fully frontend-based
 
 ---
 
@@ -92,6 +83,7 @@ When a page loads:
 To-Do-List-App-2.0/
 │
 ├── assets/
+│   ├── banner.png
 │   ├── preview.gif
 │   └── taskFlow.ico
 │
@@ -123,43 +115,6 @@ To-Do-List-App-2.0/
 
 ---
 
-# 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/taskflow.git
-```
-
-Open `index.html` in your browser.
-
----
-
-# 🎯 Future Improvements
-
-- 🔄 Refactor into single dynamic JS file  
-- 🔍 Search functionality  
-- 🎯 Task priority system  
-- 🌙 Dark / Light mode toggle  
-- 🧩 Drag & Drop reordering  
-- 🔐 Backend integration (Node.js + Database)  
-- 👤 User authentication  
-
----
-
-# 📚 What I Learned
-
-This project strengthened my understanding of:
-
-- DOM Manipulation  
-- Event Handling  
-- LocalStorage  
-- UI/UX Design  
-- Clean Code Structure  
-- Scalable Frontend Thinking  
-
----
-
 # 👨‍💻 Author
 
 **Akash Wakade**
@@ -167,12 +122,6 @@ This project strengthened my understanding of:
 🎓 B.Tech Computer Science Student  
 💻 Learning JavaScript & Web Development  
 🚀 Preparing for Open Source Contributions (GSoC 2026)
-
----
-
-# ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
 
 ---
 
