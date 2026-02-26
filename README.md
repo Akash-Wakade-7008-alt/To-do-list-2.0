@@ -19,10 +19,10 @@
 
 ---
 
-## 🌐 Live Demo
+# 🔥 Live Preview
 
-🔗 to-do-list-2-0-beryl.vercel.app
-
+⭐ **Experience the animation live here:**  
+👉 https://to-do-list-2-0-beryl.vercel.app/
 ---
 
 # 🎬 App Preview
