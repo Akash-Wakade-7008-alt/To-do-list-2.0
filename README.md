@@ -17,7 +17,7 @@
 
 # 🔥 Live Preview
 
-⭐ **Experience the animation live here:**  
+⭐ **Experience the website live here:**  
 👉 https://to-do-list-2-0-tlqh.vercel.app/
 
 ---
