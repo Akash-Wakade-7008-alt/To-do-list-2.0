@@ -21,9 +21,7 @@
 
 ## 🌐 Live Demo
 
-🔗 https://your-username.github.io/taskflow/
-
-> Replace `your-username` with your GitHub username after deployment.
+🔗 to-do-list-2-0-beryl.vercel.app
 
 ---
 
