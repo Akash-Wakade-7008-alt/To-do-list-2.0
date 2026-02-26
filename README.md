@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/banner.png" alt="TaskFlow Banner" width="100%"/>
-</p>
-
 <h1 align="center">🚀 TaskFlow – Smart Daily To-Do Manager</h1>
 
 <p align="center">
@@ -23,26 +19,31 @@
 
 ⭐ **Experience the animation live here:**  
 👉 https://to-do-list-2-0-beryl.vercel.app/
+
 ---
 
 # 🎬 App Preview
 
 ## 🏠 Landing Page
+
 <p align="center">
   <img src="./assets/Preview-1.png" width="900"/>
 </p>
 
 ## 📅 Choose Day Interface
+
 <p align="center">
   <img src="./assets/Preview-2.png" width="900"/>
 </p>
 
 ## ➕ Add Task UI
+
 <p align="center">
   <img src="./assets/Preview-3.png" width="900"/>
 </p>
 
 ## 📋 Task List Table
+
 <p align="center">
   <img src="./assets/Preview-4.png" width="900"/>
 </p>
@@ -65,12 +66,12 @@
 
 # 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|----------|
-| HTML5 | Structure |
-| CSS3 | Styling & UI Design |
-| JavaScript (ES6) | Application Logic |
-| LocalStorage API | Data Persistence |
+| Technology       | Purpose             |
+| ---------------- | ------------------- |
+| HTML5            | Structure           |
+| CSS3             | Styling & UI Design |
+| JavaScript (ES6) | Application Logic   |
+| LocalStorage API | Data Persistence    |
 
 ---
 
@@ -89,6 +90,7 @@ tasks_saturday
 ```
 
 ### On Page Load:
+
 - Tasks are fetched from LocalStorage
 - Table rows are generated dynamically
 - UI updates instantly
@@ -152,7 +154,7 @@ To-Do-List-App-2.0/
 **Akash Wakade**
 
 🎓 B.Tech Computer Science Student  
-💻 Learning JavaScript & Web Development  
+💻 Learning JavaScript & Web Development
 
 ---
 
