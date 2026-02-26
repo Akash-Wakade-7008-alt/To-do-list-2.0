@@ -153,7 +153,6 @@ To-Do-List-App-2.0/
 
 🎓 B.Tech Computer Science Student  
 💻 Learning JavaScript & Web Development  
-🚀 Preparing for Open Source Contributions (GSoC 2026)
 
 ---
 
