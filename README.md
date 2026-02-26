@@ -27,25 +27,25 @@
 ## 🏠 Landing Page
 
 <p align="center">
-  <img src="./assets/Preview-1.png" width="900"/>
+  <img src="./assets/Preview-1.png" width="100%"/>
 </p>
 
 ## 📅 Choose Day Interface
 
 <p align="center">
-  <img src="./assets/Preview-2.png" width="900"/>
+  <img src="./assets/Preview-2.png" width="100%"/>
 </p>
 
 ## ➕ Add Task UI
 
 <p align="center">
-  <img src="./assets/Preview-3.png" width="900"/>
+  <img src="./assets/Preview-3.png" width="100%"/>
 </p>
 
 ## 📋 Task List Table
 
 <p align="center">
-  <img src="./assets/Preview-4.png" width="900"/>
+  <img src="./assets/Preview-4.png" width="100%"/>
 </p>
 
 ---
