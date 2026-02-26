@@ -1,10 +1,12 @@
 <p align="center">
-  <img src="assets/banner.png" alt="TaskFlow Banner"/>
+  <img src="./assets/banner.png" alt="TaskFlow Banner" width="100%"/>
 </p>
+
+<h1 align="center">🚀 TaskFlow – Smart Daily To-Do Manager</h1>
 
 <p align="center">
   <b>Plan Your Day with Precision</b><br>
-  A modern and minimal day-wise task management web application built using pure HTML, CSS & JavaScript.
+  A modern, minimal and responsive day-wise task management web app built using pure HTML, CSS & JavaScript.
 </p>
 
 <p align="center">
@@ -17,18 +19,34 @@
 
 ---
 
-# 🚀 TaskFlow – Smart Daily To-Do Manager
-
 ## 🌐 Live Demo
 
 🔗 https://your-username.github.io/taskflow/
 
+> Replace `your-username` with your GitHub username after deployment.
+
 ---
 
-# 🎬 App Preview (Animated)
+# 🎬 App Preview
 
+## 🏠 Landing Page
 <p align="center">
-  <img src="assets/preview.gif" width="850"/>
+  <img src="./assets/Preview-1.png" width="900"/>
+</p>
+
+## 📅 Choose Day Interface
+<p align="center">
+  <img src="./assets/Preview-2.png" width="900"/>
+</p>
+
+## ➕ Add Task UI
+<p align="center">
+  <img src="./assets/Preview-3.png" width="900"/>
+</p>
+
+## 📋 Task List Table
+<p align="center">
+  <img src="./assets/Preview-4.png" width="900"/>
 </p>
 
 ---
@@ -39,10 +57,11 @@
 - ✅ Add tasks with specific time
 - ✅ Edit tasks dynamically
 - ✅ Delete tasks instantly
-- ✅ Persistent data using LocalStorage
+- ✅ Persistent storage using LocalStorage
 - ✅ Modern glassmorphism UI
-- ✅ Responsive layout
+- ✅ Fully responsive layout
 - ✅ Dynamic DOM manipulation
+- ✅ Clean and minimal user experience
 
 ---
 
@@ -51,7 +70,7 @@
 | Technology | Purpose |
 |------------|----------|
 | HTML5 | Structure |
-| CSS3 | Styling & UI |
+| CSS3 | Styling & UI Design |
 | JavaScript (ES6) | Application Logic |
 | LocalStorage API | Data Persistence |
 
@@ -62,18 +81,20 @@
 Each day stores tasks separately in LocalStorage:
 
 ```
+tasks_sunday
 tasks_monday
 tasks_tuesday
 tasks_wednesday
-...
+tasks_thursday
+tasks_friday
+tasks_saturday
 ```
 
-When the page loads:
-
+### On Page Load:
 - Tasks are fetched from LocalStorage
 - Table rows are generated dynamically
 - UI updates instantly
-- No backend required — fully frontend-based
+- No backend required (Fully Frontend Project)
 
 ---
 
@@ -84,7 +105,10 @@ To-Do-List-App-2.0/
 │
 ├── assets/
 │   ├── banner.png
-│   ├── preview.gif
+│   ├── Preview-1.png
+│   ├── Preview-2.png
+│   ├── Preview-3.png
+│   ├── Preview-4.png
 │   └── taskFlow.ico
 │
 ├── css/
@@ -115,6 +139,16 @@ To-Do-List-App-2.0/
 
 ---
 
+# 🚀 Future Improvements
+
+- Dark / Light mode toggle
+- Drag & Drop task reordering
+- Task completion statistics
+- Export tasks feature
+- Backend integration
+
+---
+
 # 👨‍💻 Author
 
 **Akash Wakade**
@@ -126,5 +160,5 @@ To-Do-List-App-2.0/
 ---
 
 <p align="center">
-  Built with ❤️ and JavaScript
+  Built with ❤️ using JavaScript
 </p>
