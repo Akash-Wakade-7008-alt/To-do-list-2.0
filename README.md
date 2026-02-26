@@ -98,6 +98,57 @@ tasks_saturday
 
 ---
 
+# ▶️ Run Locally
+
+Follow these steps to run the project on your local machine:
+
+## 📥 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/To-Do-List-App-2.0.git
+```
+
+## 📂 2️⃣ Navigate to Project Folder
+
+```bash
+cd To-Do-List-App-2.0
+```
+
+## 🌐 3️⃣ Open in Browser
+
+Simply open the `index.html` file in your browser:
+
+- Double click `index.html`  
+OR  
+- Right click → Open With → Choose your browser  
+
+---
+
+## 💻 (Recommended) Run Using VS Code Live Server
+
+If you're using VS Code:
+
+1. Install the **Live Server** extension  
+2. Right click on `index.html`  
+3. Click **"Open with Live Server"**
+
+This will:
+- Run the app on `http://127.0.0.1:5500/`
+- Auto reload when you make changes  
+
+---
+
+## 📦 No Installation Required
+
+✅ No backend  
+✅ No database  
+✅ No dependencies  
+✅ Fully frontend project  
+
+Just open and use 🎉
+
+---
+
 # 📂 Project Structure
 
 ```
@@ -154,7 +205,7 @@ To-Do-List-App-2.0/
 **Akash Wakade**
 
 🎓 B.Tech Computer Science Student  
-💻 Learning JavaScript & Web Development
+💻 Learning JavaScript & Web Development  
 
 ---
 
