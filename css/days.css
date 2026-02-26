@@ -194,7 +194,9 @@ tbody tr:hover {
   table {
     font-size: 13px;
   }
-    
+
+  .table-heading{
+    display:none;
   }
 
   table,
@@ -225,4 +227,4 @@ tbody tr:hover {
     font-weight: bold;
     text-align: left;
   }
-
+}
