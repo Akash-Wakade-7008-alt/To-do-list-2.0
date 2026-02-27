@@ -21,7 +21,7 @@
 👉 https://to-do-list-2-0-tlqh.vercel.app/
 
 ⭐ **Read the Linkden Post:**  
-👉 https://www.linkedin.com/feed/update/urn:li:activity:7427977115637104640/
+👉 https://www.linkedin.com/feed/update/urn:li:activity:7433130998042845184/
 
 ---
 
