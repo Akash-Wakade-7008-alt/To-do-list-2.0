@@ -1,4 +1,4 @@
-let showFromBtn = document.querySelector(".show-form-btn");
+      let showFromBtn = document.querySelector(".show-form-btn");
       let firstCard = document.querySelector(".card-1");
       let secondCard = document.querySelector(".card-2");
       let form = document.querySelector(".addTaskFrom");
